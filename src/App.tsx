@@ -7,8 +7,10 @@ import News from './components/News';
 function App() {
   return (
     <div className="App">
-      <main>
+      <main className="w-full min-h-full p-4">
         <Header></Header>
+        <News></News>
+        <List></List>
       </main>
     </div>
   );

@@ -3,6 +3,10 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      spacing: {
+        '64': '16rem'
+      },
+
       fontSize: {
         'paragraph': '0.9375rem'
       },
@@ -12,13 +16,13 @@ module.exports = {
       },
 
       colors: {
-        'Soft-orange': 'hsl(35, 77%, 62%)',
-        'Soft-red': 'hsl(5, 85%, 63%)',
+        'Soft-Orange': 'hsl(35, 77%, 62%)',
+        'Soft-Red': 'hsl(5, 85%, 63%)',
 
-        'Off-white': 'hsl(36, 100%, 99%)',
-        'Grayish blue': 'hsl(233, 8%, 79%)',
-        'Dark grayish blue': 'hsl(236, 13%, 42%)',
-        'Very dark blue': 'hsl(240, 100%, 5%)',
+        'Off-White': 'hsl(36, 100%, 99%)',
+        'Grayish-Blue': 'hsl(233, 8%, 79%)',
+        'Dark-Grayish-Blue': 'hsl(236, 13%, 42%)',
+        'Very-Dark-Blue': 'hsl(240, 100%, 5%)',
       }
     },
   },
