@@ -1,3 +1,19 @@
+type newsTopics = {
+    title: string
+    text: string
+}
+
+function NewsTopics(props: newsTopics){
+    return (
+        <div className="my-8 space-y-2">
+            <h3 className="font-Inter font-semibold text-white text-left text-xl">
+                <button className="hover:underline">{props.title}</button>
+            </h3>
+            <p className="font-Inter text-white opacity-60 text-left text-paragraph">{props.text}</p>
+        </div>
+    )
+}
+
 export default function News(){
     return (
         <section className=" my-8">
@@ -13,26 +29,22 @@ export default function News(){
             </div>
             <div className="max-w-max bg-Very-Dark-Blue my-16 p-4 py-6">
                 <h2 className="text-Soft-Orange font-bold font-Inter text-3xl text-left">New</h2>
-                <div className="my-8 space-y-2">
-                    <h3 className="font-Inter font-semibold text-white text-left text-xl">
-                        <button className="hover:underline">Hydrogen VS Electric Cars</button>
-                    </h3>
-                    <p className="font-Inter text-white opacity-60 text-left text-paragraph">Will hydrogen-fueled cars ever catch up to EVs?</p>
-                </div>
-                <hr />
-                <div className="my-8 space-y-2">
-                    <h3 className="font-Inter font-semibold text-white text-left text-xl">
-                        <button className="hover:underline">The Downside of AI Artistry</button>
-                    </h3>
-                    <p className="font-Inter text-white opacity-60 text-left text-paragraph">What are the possible adverse effects of on-demand AI image generation?</p>
-                </div>
-                <hr />
-                <div className="mt-8 space-y-2">
-                    <h3 className="font-Inter font-semibold text-white text-left text-xl">
-                        <button className="hover:underline">Is VC Funding Drying Up?</button>
-                    </h3>
-                    <p className="font-Inter text-white opacity-60 text-left text-paragraph">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-                </div>
+                <NewsTopics
+                title="Hydrogen VS Electric Cars"
+                text="Will hydrogen-fueled cars ever catch up to EVs?"
+                />
+                <hr className="border-Dark-Grayish-Blue"/>
+
+                <NewsTopics
+                title="The Downside of AI Artistry"
+                text="What are the possible adverse effects of on-demand AI image generation?"
+                />
+                <hr className="border-Dark-Grayish-Blue"/>
+                
+                <NewsTopics
+                title="Is VC Funding Drying Up?"
+                text="Private funding by VC firms is down 50% YOY. We take a look at what that means."
+                />
             </div>
         </section>
     )

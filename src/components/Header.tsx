@@ -2,11 +2,22 @@ import Logo from "../assets/images/logo"
 import IconMenu from "../assets/images/IconMenu"
 import MenuClose from "../assets/images/MenuClose"
 
+type MenuProps = {
+    text: string
+}
+
+function MenuItem(props: MenuProps) {
+    return (
+        <li className="text-left">
+            <button type="button">
+                <span className='text-lg font-Inter'>{props.text}</span>
+            </button>
+        </li>
+    )
+}
 
 export default function Header(){
     const menu = document.getElementById('menu')
-    const menuButton = document.getElementById('menu-button')
-    const closeButton = document.getElementById('close-button')
     const modal = document.getElementById('modal')
     const openMenu = () => {
         if(menu && modal) {
@@ -41,31 +52,11 @@ export default function Header(){
                     </div>
                     <div>
                         <ul className="space-y-4">
-                            <li className="text-left">
-                                <button type="button">
-                                    <span className='text-lg font-Inter'>Home</span>
-                                </button>
-                            </li>
-                            <li className="text-left">
-                                <button type="button">
-                                    <span className='text-lg font-Inter'>New</span>
-                                </button>
-                            </li>
-                            <li className="text-left">
-                                <button type="button">
-                                    <span className='text-lg font-Inter '>Popular</span>
-                                </button>
-                            </li>
-                            <li className="text-left">
-                                <button type="button">
-                                    <span className='text-lg font-Inter '>Trending</span>
-                                </button>
-                            </li>
-                            <li className="text-left">
-                                <button type="button">
-                                    <span className='text-lg font-Inter '>Categories</span>
-                                </button>
-                            </li>
+                            <MenuItem text="Home"/>
+                            <MenuItem text="News"/>
+                            <MenuItem text="Popular"/>
+                            <MenuItem text="Trending"/>
+                            <MenuItem text="Categories"/>
                         </ul>
                     </div>
                 </div>
