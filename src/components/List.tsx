@@ -11,12 +11,12 @@ type props = {
 
 function Item(props: props) {
     return (
-        <div className="flex space-x-4">
+        <div className="flex space-x-4 lg:w-component-size">
             <img src={props.source} alt="" className="w-24"/>
             <div className="space-y-1 text-left px-2">
                 <h3 className="font-Inter text-Grayish-Blue text-3xl font-bold">{props.order}</h3>
-                <button className="hover:underline ">
-                    <h4 className="text-lg text-Very-Dark-Blue font-Inter font-bold">{props.title}</h4>
+                <button>
+                    <h4 className="text-lg text-Very-Dark-Blue hover:text-Soft-Red lg:text-left font-Inter font-bold">{props.title}</h4>
                 </button>
                 <p className="text-paragraph text-Dark-Grayish-Blue leading-6">{props.text}</p>
             </div>
@@ -26,7 +26,7 @@ function Item(props: props) {
 
 export default function List(){
     return (
-        <section className="space-y-8">
+        <section className="space-y-8 lg:space-y-0 lg:flex lg:justify-center">
             <Item 
             source={RetroPCs} 
             order="01"

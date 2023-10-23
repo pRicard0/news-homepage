@@ -3,8 +3,15 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      screens: {
+        'max-md': {'max': '767px'}
+      },
+
       spacing: {
-        '64': '16rem'
+        '64': '16rem',
+        'component-size': '30rem',
+        'ListItem-height': '9.25rem',
+        'width': '1600px'
       },
 
       fontSize: {
