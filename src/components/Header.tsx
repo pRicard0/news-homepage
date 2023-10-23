@@ -1,4 +1,3 @@
-import { useCallback, useEffect } from "react"
 import Logo from "../assets/images/logo"
 import IconMenu from "../assets/images/IconMenu"
 import MenuClose from "../assets/images/MenuClose"
