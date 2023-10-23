@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/news-homepage/static/css/main.8f00b98e.css",
+    "main.js": "/news-homepage/static/js/main.289fa866.js",
+    "static/media/image-web-3-desktop.jpg": "/news-homepage/static/media/image-web-3-desktop.988d05305d18140f188c.jpg",
+    "static/media/image-web-3-mobile.jpg": "/news-homepage/static/media/image-web-3-mobile.aff7a393740bc26b3651.jpg",
+    "static/media/RetroPCs.jpg": "/news-homepage/static/media/RetroPCs.4ecb8a36b05f012297a6.jpg",
+    "index.html": "/news-homepage/index.html",
+    "main.8f00b98e.css.map": "/news-homepage/static/css/main.8f00b98e.css.map",
+    "main.289fa866.js.map": "/news-homepage/static/js/main.289fa866.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8f00b98e.css",
+    "static/js/main.289fa866.js"
+  ]
+}
